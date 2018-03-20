@@ -1,0 +1,19 @@
+package test.java.example;
+
+import main.java.example.*;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+public class ShoppingCartTest {
+    private ShoppingCart myCart;
+    @Before
+    public void setUp() throws Exception {
+        myCart = new ShoppingCart();
+    }
+    @After
+    public void tearDown() throws Exception {
+        myCart = null;
+    }
